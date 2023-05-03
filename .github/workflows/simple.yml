@@ -1,0 +1,15 @@
+name: Eres Email Service
+on: [Push]
+
+jobs:
+  EresEmail:
+    name: EresEmailService # Populates in the Action(name of the pipeline)
+    runs-on: [Self-Hosted]
+
+  Steps:
+    - name: echo a string
+      run: echo "This is our first GitHub Action"
+
+
+        
+
