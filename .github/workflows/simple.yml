@@ -1,14 +1,13 @@
-name: Eres Email Service
-on: [Push]
+name: Shell commands
+
+on: [push]
 
 jobs:
-  EresEmail:
-    name: EresEmailService # Populates in the Action(name of the pipeline)
-    runs-on: [Self-Hosted]
-
-  Steps:
-    - name: echo a string
-      run: echo "This is our first GitHub Action"
+    run-shell-command:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo a string
+              run: echo "Hello, Security Gurus! This is our First GitHub Action"
 
 
         
